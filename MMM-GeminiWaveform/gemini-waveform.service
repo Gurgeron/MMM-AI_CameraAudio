@@ -1,0 +1,19 @@
+[Unit]
+Description=Gemini Waveform Backend for MagicMirror
+After=network.target
+
+[Service]
+Type=simple
+User=pi
+# Update these paths to match your installation
+WorkingDirectory=/home/pi/MagicMirror/modules/MMM-GeminiWaveform/python-backend
+Environment="PATH=/home/pi/MagicMirror/modules/MMM-GeminiWaveform/python-backend/venv/bin:/usr/local/bin:/usr/bin:/bin"
+Environment="PYTHONPATH=/home/pi/MagicMirror/modules/MMM-GeminiWaveform/python-backend"
+ExecStart=/home/pi/MagicMirror/modules/MMM-GeminiWaveform/python-backend/venv/bin/python gemini_waveform_bridge.py
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

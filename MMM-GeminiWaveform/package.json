@@ -1,0 +1,34 @@
+{
+  "name": "MMM-GeminiWaveform",
+  "version": "1.0.0",
+  "description": "MagicMirror² module for displaying animated waveform visualization of Gemini AI audio responses",
+  "main": "MMM-GeminiWaveform.js",
+  "scripts": {
+    "install-python": "cd python-backend && python3 -m venv venv && ./venv/bin/pip install -r requirements.txt",
+    "start-backend": "cd python-backend && ./venv/bin/python gemini_waveform_bridge.py",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/MMM-GeminiWaveform"
+  },
+  "keywords": [
+    "magic mirror",
+    "smart mirror",
+    "module",
+    "gemini",
+    "ai",
+    "waveform",
+    "audio",
+    "visualization"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yourusername/MMM-GeminiWaveform/issues"
+  },
+  "homepage": "https://github.com/yourusername/MMM-GeminiWaveform#readme",
+  "dependencies": {
+    "ws": "^8.14.0"
+  }
+}

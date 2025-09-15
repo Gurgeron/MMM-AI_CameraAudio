@@ -1,0 +1,16 @@
+# Core dependencies
+google-genai>=0.1.0
+opencv-python>=4.5.0
+numpy>=1.19.0
+pyaudio>=0.2.11
+python-dotenv>=0.19.0
+
+# WebSocket server
+websockets>=10.0
+
+# Image processing (for camera/screen modes if needed)
+Pillow>=9.0.0
+mss>=6.0.0
+
+# Async support
+asyncio>=3.4.3

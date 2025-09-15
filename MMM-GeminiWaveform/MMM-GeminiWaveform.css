@@ -1,0 +1,43 @@
+/* MagicMirror² Module: MMM-GeminiWaveform
+ * Styles
+ * 
+ * By Your Name
+ * MIT Licensed.
+ */
+
+.gemini-waveform-wrapper {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+}
+
+.gemini-waveform-canvas {
+    display: block;
+    background: transparent;
+    border-radius: 8px;
+}
+
+.gemini-waveform-status {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    font-size: 12px;
+    color: #666;
+    font-family: "Roboto", sans-serif;
+}
+
+.gemini-waveform-status .connected {
+    color: #4CAF50;
+}
+
+.gemini-waveform-status .disconnected {
+    color: #f44336;
+}
+
+/* Optional: Add a subtle border for better visibility on dark backgrounds */
+.module.MMM-GeminiWaveform {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.3);
+}
